@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,drugstore,internet,impresiones,print,fotocopias,kiosco,celulares, nosotros,Contacto">
+    <meta name="description" content="Pagina de Drugstore Lacroze, aca podes contactarte con nosotros para, Imprimir, enviar archivos, o contartarte para ahcer consultas ">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Hoja de estilos general. -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado. -->
+        <header>
+            <div class="brand-container">
+                <!-- Logotipo. -->
+                <a class="navbar-brand" href="./"><img src="../img/logo.jpg" alt="Logo" 
+                        class="logo"></a>
+        
+                <!-- Título de la página. -->
+                <a class="navbar-brand" href="./"><h1 class="main-title">DRUSTORE LACROZE</h1></a>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <nav class="row navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Expande/contrae el menú principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="menuPrincipal">
+                        <!-- Menú Principal. -->
+                        <ul class="navbar-nav nav-tabs me-auto">
+                            <li class="nav-item"><a href="../index.html" class="nav-link active">INICIO</a></li>
+                            <li class="nav-item"><a href="/pages/servicios.html" class="nav-link">SERVICIOS</a></li>
+                            <li class="nav-item"><a href="/pages/ofertas.html" class="nav-link">OFERTAS</a></li>
+                            <li class="nav-item"><a href="/pages/nosotros.html" class="nav-link">NOSOTROS</a></li>
+                            <li class="nav-item"><a href="/pages/contacto.html" class="nav-link">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </nav>
+
+        <main class="row">
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <label for="contactoNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="contactoNombre" aria-describedby="ayudaNombres">
+                    <div id="ayudaNombres" class="form-text">Si es para impresiones aclarar</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactoEmail" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="contactoEmail" aria-describedby="ayudaEmail">
+                  <div id="ayudaEmail" class="form-text">Con tu correo electrónico podemos responder tus mensajes.</div>
+                </div>
+
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="contactoRespuestaCheck">
+                  <label class="form-check-label" for="contactoRespuestaCheck">Quiero que me respondan</label>
+                </div>
+
+                <div class="mb-3">
+                    <textarea name="mensaje" id="contactoMensaje" cols="80" rows="10" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+        </main>
+
+        <footer class="row">
+           
+            <!-- Redes sociales. -->
+            <ul class="social-media">
+                <!-- Facebook -->
+                <li class="social-media-item">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/rs-facebook_w24.png" alt="Nuestra página en Facebook">
+                    </a>
+                </li>
+
+                <!-- Instagram -->
+                <li class="social-media-item">
+                    <a href="https://wwww.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/rs-instagram_w24.png" alt="Síguenos en Instagram">
+                    </a>
+                </li>
+
+               
+                <!-- Correo electrónico -->
+                <li class="social-media-item">
+                    <a href="mailto:Lacroze3276@gmail.com">
+                        <img src="../img/email_w24.png" alt="Envíanos un correo electónico">
+                    </a>
+                </li>
+            </ul>
+
+            <hgroup class="attribution">
+                <!-- Reserva de derechos. -->
+                <h3 class="copyright">Todos los derechos reservados. 2022. </h3>
+
+                <!-- Autor. -->
+                <h4 class="author">Diseño por: <a href="#" target="_blank" rel="noopener noreferrer">@MartinBegega</a></h4>
+            </hgroup>
+        </footer>
+    </div>
+
+    <!-- Paquete Bootstrap / Popper. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>

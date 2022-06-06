@@ -1,0 +1,271 @@
+/* Reset. */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-Sunray: #ECB365;
+    --color-CadetBlue: #51A3A3;
+    --color-Charcoal: #37515F;
+    --color-Xiketic: #1F0812;
+    --color-AliceBlue: #F4FAFF;
+    --color-Ruby: #D81E5B;
+    --color-Marigold: #F0A202;
+}
+
+/* Aspecto general de toda la página. */
+body {
+    font-family: sans-serif;
+}
+
+.container,
+.container-fluid {
+    background-color: transparent;
+}
+
+.bi {
+    color: var(--color-Marigold);
+}
+
+
+/*******************************************************************************
+|
+|   Mobile First: width < 576px (bootstrap X-Small breakpoint)
+|
+*******************************************************************************/
+
+/* Encabezado. */
+header {
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-Sunray);
+    padding: 1rem;
+}
+
+/* Contenedor del logotipo. */
+.logo {
+    width: 48px;
+}
+
+/* Contenedor del logotipo y título principal. */
+.brand-container {
+    display: flex;
+    align-items: baseline;
+    column-gap: 1rem;
+}
+
+
+/* Ocultar el título principal. */
+.main-title {
+    color: #1F0812;
+    display: none;
+}
+
+/* Barra de navegación. */
+nav {
+    background-color: var(--color-CadetBlue);
+}
+
+/* Banner. */
+#carouselContainer {
+    display: none;
+    margin-top: 0.25rem;
+    background-color: var(--color-Xiketic);
+}
+
+/* Formulario de búsqueda. */
+.search-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem 1rem;
+}
+
+/* Espaciado entre tarjetas y alineación en el main */
+main {
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+}
+
+/* Posición del pié de página en la grilla. */
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem 1rem 1rem;
+    background-color: var(--color-Charcoal);
+}
+
+
+/* Ligas de cada elemento del menú del pié de página. */
+.footer-menu-item a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Aspecto de las ligas del menú de pié de pagina antes y
+    después de ser visitados. */
+.footer-menu-item a:link,
+.footer-menu-item a:visited {
+    color: #ECB365;
+}
+
+/* Menú de redes sociales */
+.social-media {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* Área del copyright. */
+.copyright {
+    text-align: center;
+    font-size: medium;
+    color: var(--color-AliceBlue);
+}
+
+/* Área del autor. */
+.author {
+    text-align: center;
+    font-size: small;
+    color: var(--color-AliceBlue);
+}
+
+
+
+/* Conenedor de página de Login. */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* Títulos en el Login. */
+.login-container h1,
+.login-container h2 {
+    text-align: center;
+}
+
+/* Ocultar el split-area. */
+.split-area {
+    display: none;
+}
+
+/* Ocultar imágenes que toman demasiado espacio vertical. */
+.post-image {
+    display: none;
+}
+
+
+/*******************************************************************************
+|
+|   Tablet: width >= 768px (bootstrap Medium breakpoint)
+|
+*******************************************************************************/
+
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: flex-start;
+        column-gap: 1rem;
+        height: 96px;
+    }
+
+    /* Crece la imagen del logotipo. */
+    .logo {
+        width: 64px;
+    }
+
+    /* Mostrar el título principal. */
+    .main-title {
+        display: block;
+    }
+
+    /* Carrusel. */
+    #carouselContainer {
+        display: block;
+    }
+
+    footer {
+        flex-flow: row wrap;
+        column-gap: 1rem;
+    }
+
+    .footer-menu {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .social-media {
+        flex: 4 4 80%;
+    }
+
+    .attribution {
+        width: 100vw;
+    }
+
+    .login-container {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+   
+
+
+
+/*******************************************************************************
+|
+|   Desktop: width >= 992px (bootstrap Large breakpoint)
+|
+*******************************************************************************/
+@media screen and (min-width: 992px) {
+    header {
+        height: 160px;
+    }
+
+    .logo {
+        width: 128px;
+    }
+
+    .split-area {
+        height: 25%;
+        max-height: 25vh;
+    }
+
+    .post {
+        grid-column: 1 / -1;
+    }
+
+    .post-text {
+        margin-top: 1rem;
+    }
+
+    .post-image {
+        display: block;
+        width: 100%;
+    }
+
+    /* Botones (el puntero del ratón no se usa en celulares ni tabletas.) */
+    button {
+        cursor: pointer;
+    }
+
+}}

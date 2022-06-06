@@ -1,0 +1,70 @@
+
+// Pantallas medianas (tabletas)
+@mixin mq-medium {
+    @media screen and (min-width: 768px) {
+        body {
+            .container {
+                header {
+                    height: 96px;
+        
+                    .brand-container {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        
+                        .logo {
+                            width: 64px;
+                        }
+            
+                        .main-title {
+                            display: block;
+                        }
+                    }
+                }
+        
+                #carousel-container {
+                    display: block;
+                }
+        
+                footer {
+                    flex-flow: row wrap;
+                    column-gap: 1rem;
+        
+                    .footer-menu {
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        flex-flow: row wrap;
+                        justify-content: space-evenly;
+                    }
+        
+                    .social-media {
+                        flex: 4 4 80%;
+                    }
+
+                    hgroup {
+                        width: 100vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin mq-large {
+    @media screen and (min-width: 992px) {
+        body {
+            .container {
+                header {
+                    height: 160px;
+    
+                    .brand-container {
+                        .logo {
+                            width: 128px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
